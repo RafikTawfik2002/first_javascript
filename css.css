@@ -1,0 +1,150 @@
+header {
+  font-weight: bold;
+  background-color: lightblue;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  font-size: 3em;
+  text-align: center;
+}
+
+p.ex1{
+  margin-bottom: 4em;
+}
+
+div {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+}
+
+div div {
+  display: inline;
+  float: left;
+  padding-left: 2em;
+  margin-left: 2em;
+  padding-right: 2em;
+  margin-top: 2em;
+  border: 2px solid blue;
+  height:200px;
+  text-align: center;
+}
+
+div.div1 {
+  width: 200px;
+}
+
+h1 {
+  text-align: center;
+}
+
+div.inner{
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+p {
+  text-align: center;
+}
+
+.adjust{
+  width: 80%;
+}
+
+.ex2{
+  margin-top: 2em;
+  text-align: left;
+}
+
+label{
+
+  display: inline-block;
+}
+
+div.box {
+  padding: 0;
+  margin: 0;
+  display: inline;
+  /* border: 1px solid black; */
+  border: 0;
+  height:auto;
+  float:left;
+}
+
+
+.button:hover{
+  background-color: lightgreen;
+}
+
+div.abs1 {
+  position: absolute;
+  top:50px;
+  left:5px;
+}
+
+div.abs2{
+  position: absolute;
+  top:50px;
+  left:300px;
+}
+
+div.height {
+  height: 210px;
+  border: 0px solid blue;
+}
+
+.abs{
+  position: absolute;
+  left: 70px;
+  top: 110px;
+}
+
+.int {
+  display: block;
+  margin-bottom: 1.3em;
+}
+
+.this{
+  position: absolute;
+  left: -2px;
+  top: 570px;
+  border: 0;
+}
+
+.that{
+  position: absolute;
+  left: 158px;
+  top: 570px;
+  border: 0;
+}
+
+.that button{
+  font-size: .8em;
+  display: block;
+  margin-bottom: 8px;
+  width:100%;
+}
+
+#converter1_ans{
+  position: absolute;
+  top: 370px;
+  right: 460px;
+}
+
+#converter2_ans{
+  position: absolute;
+  top: 370px;
+  right: 100px;
+}
