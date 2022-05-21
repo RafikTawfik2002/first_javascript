@@ -7,6 +7,14 @@ function change() {
 
 window.onload = function(){
 document.getElementById("count").innerHTML = '0'
+for (let i = 0; i < 5; i++){
+  id = "el" + (i + 1);
+  document.getElementById(id).value = ("Element" + (i + 1));
+  document.getElementById(id).placeholder = ("Element" + (i + 1));
+  document.getElementById('converter1_ans').innerHTML = 'Result: '
+  document.getElementById('converter2_ans').innerHTML = 'Result: ';
+}
+
 }
 
 var i = 0;
@@ -22,12 +30,24 @@ function count(op){
 
 function convert1() {
   c = document.getElementById('converter1').value;
-  document.getElementById('converter1_ans').innerHTML = 'Result: ' + (Math.round(((c*9/5) + 32)*100)/100)
+  ans = (Math.round(((c*9/5) + 32)*100)/100);
+  if (isNaN(ans)) {
+    document.getElementById('converter1_ans').innerHTML = 'invalid';
+  }
+  else{
+  document.getElementById('converter1_ans').innerHTML = 'Result: ' + ans + " F°";
+}
 }
 
 function convert2() {
   c = document.getElementById('converter2').value;
-  document.getElementById('converter2_ans').innerHTML = 'Result: ' + (Math.round(100*((c - 32)*5/9))/100);
+  ans = (Math.round(100*((c - 32)*5/9))/100);
+  if (isNaN(ans)){
+    document.getElementById('converter2_ans').innerHTML = 'invalid'
+  }
+  else{
+  document.getElementById('converter2_ans').innerHTML = 'Result: ' + ans + " C°";
+}
 }
 
 
@@ -56,4 +76,21 @@ function FuelCar() {
   a = CreateCar();
   a.fuel();
   document.getElementById('gas').value = a.gas;
+}
+
+
+ls = ["el1", "el2", "el3", "el4"];
+//
+function Render() {
+  ls2 = [];
+  i = 0;
+  for (x in ls) {
+    ls2.push(document.getElementById(ls[i]).value);
+    i++;
+  }
+  html = ""
+  for (x in ls2){
+    html += "<li><span>" + ls2[x] + "</span></li>";
+  }
+  document.getElementById('insert').innerHTML = html;
 }

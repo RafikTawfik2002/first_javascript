@@ -1,66 +1,112 @@
-<!DOCTYPE  html>
+<!DOCTYPE html>
 <html lang='eng'>
+
+
+<div class="flex_header">
 <head>
   <script src="none.js"></script>
-  <link rel="stylesheet" href="css.css">
- <title>Javascript</title>
+  <link rel="stylesheet" href="css_1.css">
+  <title>Javascript</title>
 </head>
+</div>
+
 <body>
   <header>Example 1 of Javascript</header>
 
-<div class="mother height">
-  <div class="div1 abs1">
-    <p class="ex1" id="sent">This sentence will change upon clicking</p>
-    <button class="button abs" type="button" onclick="change()">Click Me!</button>
-  </div>
-  <div class="counter abs2">
-    <p>This is a counter</p>
-    <h1 id="count"></h1>
-    <div class='inner'>
-    <button class="button" type="button" onclick="count('+')">+</button>
-    <button class="button" type="button" onclick="count('-')">-</button>
+  <!-- ------------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------------ -->
+  <div class="first_line">
+
+    <!-- ------------------------------------------------------------------------------ -->
+    <div class="sentence_example">
+      <p class="ex1" id="sent">This sentence will change upon clicking</p>
+      <button class="button abs" type="button" onclick="change()">Click Me!</button>
+    </div>
+    <!-- ------------------------------------------------------------------------------ -->
+    <div class="counter">
+      <p>This is a counter</p>
+      <h1 id="count"></h1>
+
+      <button class="button" type="button" onclick="count('+')">+</button>
+      <button class="button" type="button" onclick="count('-')">-</button>
     </div>
   </div>
-</div>
+  <!-- ------------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------------ -->
 
-<div class="mother adjust">
-  <div class="adjust">
-    <label for="converter1" class="ex2">Convert from Celsius to Farenheit</label>
-    <div class="box">
-    <input type='text' name='converter1' id='converter1' placeholder="Enter T in C" class="ex2">
-    <p id="converter1_ans"></p>
-  </div>
-    <button class="button ex2" type="button" onclick="convert1()">Convert</button>
-  </div>
-  <div class="adjust">
-    <label for="converter2" class="ex2" id="sent">Convert from Farenheit to Celsuis</label>
-    <div class="box">
-    <input type='text' name='converter2' id='converter2' placeholder="Enter T in F" class="ex2">
+  <div class="converter">
+
+    <div class="converter1">
+      <label for="converter1">Convert from Celsius to Farenheit</label>
+
+      <input type='text' name='converter1' id='converter1' placeholder="Enter T in C°">
+      <p id="converter1_ans"></p>
+
+      <button class="button" type="button" onclick="convert1()">Convert</button>
+    </div>
+
+    <div class="convert2">
+    <label for="converter2">Convert from Farenheit to Celsuis</label>
+
+    <input type='text' name='converter2' id='converter2' placeholder="Enter T in F°">
     <p id="converter2_ans"></p>
-  </div>
-    <button class="button ex2" type="button" onclick="convert2()">Convert</button>
-  </div>
-</div>
 
-<div>
-  <div>
-  <h3>Example of a Javascript Object</h3>
-  <div class="this">
-  <input class="int" type="text" id="brand" placeholder="Enter car brand">
-  <input class="int" type="text" id="price" placeholder="Enter car price">
-  <input class="int" type="text" id="gas" placeholder="Enter gas in tank">
-</div>
-  <div class="that">
+    <button class="button" type="button" onclick="convert2()">Convert</button>
+    </div>
+
+  </div>
+
+  <!-- ------------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------------ -->
+  <div class="line_thado">
+  
+  <div class="object">
+    <h3>Example of a Javascript Object</h3>
+
+    <div class="object_input">
+    <input type="text" id="brand" placeholder="Enter car brand">
+    <input type="text" id="price" placeholder="Enter car price">
+    <input type="text" id="gas" placeholder="Enter gas in tank">
+    </div>
+
+    <div class="object_methods">
     <button class="button" type="button" onclick="DepleteCar()">Deplete()</button>
     <button class="button" type="button" class="but" onclick="FuelCar()">Fuel()</button>
+    </div>
+    
   </div>
-</div>
-</div>
 
+  <!-- ------------------------------------------------------------------------------ -->
 
+  <div class="list">
+    <h3>Upon clicking a list will print</h3>
 
+    <div class="list_input">
+    <input type="text" id="el1" >
+    <input type="text" id="el2" >
+    <input type="text" id="el3" >
+    <input type="text" id="el4" >
+    <button class="button" type="button" onclick="Render()">Render()</button>
+    </div>
+
+    <div class="list_output">
+    <h5>The list will render below</h5>
+    <ul id="insert"></ul>
+      </div>
+  </div>
+  </div>
+  <!-- ------------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------------ -->
+  <div>
+  </div>
+  <!-- ------------------------------------------------------------------------------ -->
+  <!-- ------------------------------------------------------------------------------ -->
+  <div class="big">Just something big enough to scroll on</div>
+  
+  <footer><h3>Contact me and give me donations!</h3></footer>
 
 
 
 </body>
+
 </html>
